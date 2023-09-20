@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: rgb(2, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;color: rgb(2, 2, 15);font-size: xx-large;font-weight: bolder;"><P>CALCULATOR</P></div>
+    <div style="display: flex;justify-content: center;background-color: white;">
+
+        <div style="border: 2px black solid;border-radius: 35px;padding: 20px;">
+            <button id="colour" onclick="togglecolor()" style="border-radius: 50%;width: 20px;height: 20px;background-color: black;"></button>
+            <div style="text-align: center;margin-top: 40px;margin-bottom: 10px;">
+                <input style="padding:0px 0px;border: white 2px solid;border-bottom: grey 2px solid;text-align: right;width: 280px;font-size: x-large;" class="input" type="text" readonly>            
+            </div>
+            <div style="display: flex;flex-direction: row;">
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">C</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">%</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">CE</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">/</button>
+            </div> 
+
+            <div style="display: flex;flex-direction: row;">
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">7</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">8</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">9</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">*</button>
+            </div>
+ 
+            <div style="display: flex;flex-direction: row;">
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">4</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">5</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">6</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">-</button>
+            </div>
+
+            <div style="display: flex;flex-direction: row;">
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">1</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">2</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">3</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">+</button>
+            </div>
+
+            <div style="display: flex;flex-direction: row;">
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">00</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">0</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(64, 63, 63);border-radius: 20px;margin: 10px;color: white;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">.</button>
+                <button class="button" style="height: 50px;width: 50px;background-color: rgb(208, 224, 224);border-radius: 20px;margin: 10px;color: black;width: 60px;border: 1px white solid;font-weight: bolder;font-size: large;">=</button>
+            </div>
+
+        </div>    
+    </div>
+</body> 
+<script> 
+    let string ="";
+    let buttons = document.querySelectorAll(".button");
+    Array.from(buttons).forEach((button)=>{
+        button.addEventListener('click', (ans)=>{
+            if(ans.target.innerHTML == '='){
+                string = eval(string);
+                document.querySelector('input').value = string;
+            }
+            else if(ans.target.innerHTML == 'C'){
+                string = ""
+                document.querySelector('input').value = string;
+            } 
+            else{
+            console.log(ans.target)
+            string = string + ans.target.innerHTML;
+            document.querySelector('input').value = string;
+            }
+        })
+    })  
+</script>
+</html>
+
